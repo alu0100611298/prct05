@@ -7,8 +7,6 @@ class Fraccion
 	attr_accessor :numerador, :denominador
 
 	def initialize(a,b)
-		raise unless a.is_a?(Numeric)
-		raise unless b.is_a?(Numeric)
 		#@numerador = ((/\d+/.match(fraccion)).to_s).to_i # recojo el número antes de la /
 		#@denominador = ((/\d+/.match((/\/\d+/.match(fraccion)).to_s)).to_s).to_i #recojo la y el número y luego solo el número
 		mcd = gcd(a,b)

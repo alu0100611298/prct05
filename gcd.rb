@@ -6,4 +6,6 @@ def gcd(u, v)
   u
 end
 
-puts gcd(6,3)
+if __FILE__ == $0
+	puts gcd(6,3)
+end
