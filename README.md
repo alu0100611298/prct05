@@ -86,6 +86,39 @@ común divisor. Haciendo uso del depurador de ruby detecte el error en el códig
 3. *Implemente un conjunto de [Pruebas Unitarias](http://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing) que permitan comprobar el correcto funcionamiento 
    de la clase que implementa a los números racionales.*
 
+1)
+2.1) El error esta en el bucle while, la condicion while v == 0 siempre será evaluada a falso a no ser q v de entrada sea 0. Lo correcto sería while v != 0.
 
-Para la ejecución de programa usar el comando rake, para los test rake test, se pueden ver las diferentes opciones pasandole la opcion -T al comando rake.
-En la ejecución del programa se le pedirán al usuario dos numeros que pueden ser, enteros o fraccionarios y a estos se les calculara la suma, resta, multiplicación y división.
+2.2)
+
+Los comandos:
+
+s => avanza(en los métodos) una linea o hasta la linea n
+
+v l => muestra las variables locales.
+
+gcd.rb:1:def gcd(u, v)
+(rdb:1) s
+gcd.rb:9:puts gcd(6,3)
+(rdb:1) s
+gcd.rb:2:  u, v = u.abs, v.abs
+(rdb:1) v l
+  u => 6
+  v => 3
+(rdb:1) s
+gcd.rb:3:  while v == 0 #Aqui nos damos cuenta que no entra en el bucle
+(rdb:1) v l # Al imprimir las variables locales vemos que el valor de v es 3 que es distinto que cero y la condición no se cumple.
+  u => 6
+  v => 3
+(rdb:1) s
+gcd.rb:6:  u
+(rdb:1) s
+6
+
+2)
+Para la ejecución de programa usar el comando rake,  se pueden ver las diferentes opciones pasandole la opcion -T al comando rake.
+En la ejecución del programa se le pedirán al usuario dos numeros que pueden ser, enteros o fraccionarios del tipo "a/b" o "a" siendo a y b números enteros y a estos se les calculara la suma, resta, multiplicación y división.
+
+3)Para ejecutar los test usar el comando rake test.
+
+rake -T nos dará información de los diferentes métodos de ejecución de rake.
