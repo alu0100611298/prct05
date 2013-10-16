@@ -85,3 +85,8 @@ común divisor. Haciendo uso del depurador de ruby detecte el error en el códig
 
 3. *Implemente un conjunto de [Pruebas Unitarias](http://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing) que permitan comprobar el correcto funcionamiento 
    de la clase que implementa a los números racionales.*
+
+
+Para la ejecución de programa usar el comando rake, para los test rake test, se pueden ver las diferentes opciones pasandole la opcion -T al comando rake.
+En la ejecución del programa se le pedirán al usuario dos numeros enteros o fraccionarios y a estos se les calculara la suma, resta, multiplicación y división.
+En

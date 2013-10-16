@@ -6,9 +6,9 @@ def main
 	puts "Se pediran dos fracciones al usuario y se le realizarán las distintas operaciones"
 	puts "Introduzca una fraccion del tipo \"a/b\" donde a y b son números enteros."
 	fraccion_a =  gets
+	a = Fraccion.new(fraccion_a)
 	puts "Introduzca la segunda fraccion del tipo \"a/b\" donde a y b son números enteros."
 	fraccion_b =  gets
-	a = Fraccion.new(fraccion_a)
 	b = Fraccion.new(fraccion_b)
 	puts "Fracción a:"
 	puts a;

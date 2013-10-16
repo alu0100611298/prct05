@@ -5,10 +5,10 @@ def main
 	puts "Bienvenido al programa de suma, resta, multiplicación y división de fracciones"
 	puts "Se pediran dos fracciones al usuario y se le realizarán las distintas operaciones"
 	puts "Introduzca una fraccion del tipo \"a/b\" donde a y b son números enteros."
-	fraccion_a =  gets
+	fraccion_a =  gets.chomp
 	a = Fraccion.new(fraccion_a)
 	puts "Introduzca la segunda fraccion del tipo \"a/b\" donde a y b son números enteros."
-	fraccion_b =  gets
+	fraccion_b =  gets.chomp
 	b = Fraccion.new(fraccion_b)
 	puts "Fracción a:"
 	puts a;
